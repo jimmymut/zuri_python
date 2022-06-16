@@ -13,7 +13,7 @@ while True:
     while True:
         Player = input("pick your move, either R or P or S:\n").upper()
         while Player not in listoptions:
-            Player = input("Error! picked a invalid option, try again\nplease pick either R or P or S:\n").upper()
+            Player = input("Error! entered an invalid option, try again\nplease pick either R or P or S:\n").upper()
         CPU = random.choice(listoptions)
         if Player == CPU:
             print("its a tie, repeat")
